@@ -28,6 +28,8 @@ import TranslationService from '@/locale/translation.service';
 import UserOAuth2Service from '@/entities/user/user.oauth2.service';
 /* tslint:disable */
 
+import CodeTablesService from '@/entities/code-tables/code-tables.service';
+import CodeValuesService from '@/entities/code-values/code-values.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -86,6 +88,8 @@ new Vue({
 
     userOAuth2Service: () => new UserOAuth2Service(),
     translationService: () => translationService,
+    codeTablesService: () => new CodeTablesService(),
+    codeValuesService: () => new CodeValuesService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
     alertService: () => new AlertService(),

@@ -42,6 +42,8 @@
     "devServerPort": 9060,
     "clientPackageManager": "npm",
     "languages": ["en"],
-    "enableGradleEnterprise": false
+    "enableGradleEnterprise": false,
+    "entities": ["CodeTables", "CodeValues"],
+    "lastLiquibaseTimestamp": 1635596821000
   }
 }

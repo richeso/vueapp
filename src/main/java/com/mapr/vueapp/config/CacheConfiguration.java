@@ -48,6 +48,12 @@ public class CacheConfiguration {
             createCache(cm, com.mapr.vueapp.domain.User.class.getName());
             createCache(cm, com.mapr.vueapp.domain.Authority.class.getName());
             createCache(cm, com.mapr.vueapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.mapr.vueapp.domain.CodeTables.class.getName());
+            createCache(cm, com.mapr.vueapp.domain.CodeTables.class.getName() + ".tableIds");
+            createCache(cm, com.mapr.vueapp.domain.CodeValues.class.getName());
+            createCache(cm, com.mapr.vueapp.domain.CodeTables.class.getName() + ".codeValues");
+            createCache(cm, com.mapr.vueapp.domain.CodeTables.class.getName() + ".ids");
+            createCache(cm, com.mapr.vueapp.domain.CodeTables.class.getName() + ".tableNames");
             // jhipster-needle-ehcache-add-entry
         };
     }
